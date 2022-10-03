@@ -57,7 +57,7 @@ header {
   font-style: italic;
   display: flex;
   padding: 10px;
-  padding-left: 300px;
+  margin-left: 10vw;
   justify-content: center;
   align-items: center;
 }
@@ -71,13 +71,14 @@ header {
   padding: 0;
   justify-content: center;
   align-items: center;
-  margin-right: 150px;
+  margin-right: 10vw;
 }
 
 #header-menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 #header-menu li {
@@ -93,7 +94,7 @@ header {
 #content1 {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 5vw;
 }
 
 #about-me-text {
@@ -101,7 +102,8 @@ header {
   font-weight: 200;
   font-style: normal;
   margin: 10px;
-  margin-left: 500px;
+  margin-left: 20vw;
+  margin-right: 2vw;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -109,7 +111,7 @@ header {
 }
 
 #about-me-text h1 {
-  margin-bottom: 25px;
+  margin-bottom: 2vw;
   font-family: Roboto;
   font-weight: 600;
   font-style: normal;
@@ -124,14 +126,15 @@ header {
   justify-content: center;
   align-items: center;
   margin: 10px;
-  margin-right: 500px;
+  margin-right: 20vw;
+  margin-left: 2vw;
 }
 
 #about-me-photo img {
   display: flex;
   margin: 0;
   border-radius: 10%;
-  width: 300px;
+  width: auto;
   height: 400px;
 }
 
@@ -139,15 +142,15 @@ header {
   font-family: Roboto;
   display: flex;
   margin: 0;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
   flex-direction: column-reverse;
 }
 
 #exp-1, #exp-2, #exp-3, #exp-4 {
   margin: 0;
-  margin-left: 400px;
-  margin-right: 400px;
+  margin-left: 15vw;
+  margin-right: 15vw;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -156,6 +159,7 @@ header {
 #exp-1 h1, #exp-2 h1, #exp-3 h1, #exp-4 h1 {
   font-style: normal;
   font-weight: 600;
+  font-size: 2vw;
   margin: 0;
 }
 
@@ -186,4 +190,111 @@ header {
 #linkedIn img {
   width: 100px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1250px) {
+  #about-me-text p {
+    font-size: 16px;
+  }
+
+  #about-me-photo img {
+    height: 350px;
+  }
+
+  #exp-1, #exp-2, #exp-3, #exp-4 {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  #exp-1 h1, #exp-2 h1, #exp-3 h1, #exp-4 h1 {
+    font-size: 1.7vw;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  #name {
+    font-size: 1vw;
+  }
+
+  #header-menu {
+    font-size: 1vw;
+  }
+
+  #about-me-text h1 {
+    font-size: 2vw;
+  }
+  
+  #about-me-text p {
+    font-size: 1.5vw;
+  }
+
+  #about-me-photo img {
+    height: 30vw;
+  }
+
+  #exp-1, #exp-2, #exp-3, #exp-4 {
+    margin-left: 16vw;
+    margin-right: 16vw;
+  }
+
+  #exp-1 h1, #exp-2 h1, #exp-3 h1, #exp-4 h1 {
+    font-size: 2vw;
+  }
+
+  #exp-1 p, #exp-2 p, #exp-3 p, #exp-4 p {
+    font-size: 2vw;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  #name {
+    margin-left: 4vw;
+    font-size: 1.5vw;
+  }
+
+  #header-menu {
+    margin-right: 4vw;
+    font-size: 1.5vw;
+  }
+
+  #about-me-text {
+    margin-left: 10vw;
+  }
+
+  #about-me-text h1 {
+    font-size: 2.5vw;
+  }
+  
+  #about-me-text p {
+    font-size: 2vw;
+  }
+
+  #about-me-photo {
+    margin-right: 10vw;
+  }
+
+  #about-me-photo img {
+    height: 40vw;
+  }
+
+  #exp-1, #exp-2, #exp-3, #exp-4 {
+    margin-left: 12vw;
+    margin-right: 12vw;
+  }
+
+  #exp-1 h1, #exp-2 h1, #exp-3 h1, #exp-4 h1 {
+    font-size: 4vw;
+  }
+
+  #exp-1 p, #exp-2 p, #exp-3 p, #exp-4 p {
+    width: 45vw;
+    font-size: 2.5vw;
+  }
+
+  #linkedIn img {
+    width: 20vw;
+    margin-bottom: 15px;
+  }
 }
